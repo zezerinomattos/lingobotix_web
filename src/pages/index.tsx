@@ -39,7 +39,6 @@ export default function Conversation(){
         const model = 'text-davinci-002';
         const maxTokens = 2048;
 
-        // const REACT_APP_OPENAI_API_KEY = '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';
         const REACT_APP_OPENAI_API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
 
         await api_openai.post('/completions', {
